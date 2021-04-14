@@ -11,7 +11,7 @@ class ContactCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 350.0,
-      height: 170.0,
+      height: 160.0,
       margin: EdgeInsets.symmetric(vertical: 25.0),
       decoration: BoxDecoration(
         color: Colors.blue.shade300,
@@ -67,9 +67,8 @@ class ContactCard extends StatelessWidget {
                 //designs
                 Row(
                   children: [
-                    Icon(
-                      CupertinoIcons.heart_fill,
-                      color: Colors.pink.shade300,
+                    Padding(
+                      padding: EdgeInsets.only(top: 80.0),
                     ),
                     Icon(
                       CupertinoIcons.heart_fill,
@@ -78,13 +77,21 @@ class ContactCard extends StatelessWidget {
                     Icon(
                       CupertinoIcons.heart_fill,
                       color: Colors.pink.shade300,
+                    ),
+                    Icon(
+                      CupertinoIcons.heart_fill,
+                      color: Colors.pink.shade300,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 15.0),
                     ),
                     Icon(
                       CupertinoIcons.tag,
                       color: Colors.black,
+                      size: 24.0,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 5.0),
+                      padding: EdgeInsets.only(left: 3.0, right: 21.0),
                       child: Text(
                         this.bossiness,
                         style: TextStyle(
@@ -92,6 +99,12 @@ class ContactCard extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 1.0),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
                     ),
                     Icon(
                       CupertinoIcons.trash,
