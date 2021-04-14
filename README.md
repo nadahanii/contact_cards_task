@@ -1,2 +1,2 @@
-# contact_cards_task
+practicing images , icons and rows by making some contact cards 
  
